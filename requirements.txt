@@ -1,10 +1,10 @@
 datasets==2.19.1
 albumentations==1.4.21
 opencv-python-headless==4.10.0.84
-evaluate @ file:///croot/evaluate_1679573606367/work
-transformers @ file:///croot/transformers_1729767158381/work
-numpy @ file:///croot/numpy_and_numpy_base_1708638617955/work/dist/numpy-1.26.4-cp311-cp311-linux_x86_64.whl#sha256=5f96f274d410a1682519282ae769c877d32fdbf171aa8badec7
+evaluate==0.4.0
+transformers==4.31.0
+numpy==1.26.4
 torch==2.5.1
 wandb==0.18.7
 matplotlib==3.9.2
-seaborn @ file:///croot/seaborn_1718302919398/work
+seaborn==0.12.2
