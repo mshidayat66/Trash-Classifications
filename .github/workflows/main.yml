@@ -23,6 +23,11 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
+    - name: Login to Hugging Face
+      run: |
+        pip install huggingface_hub
+        huggingface-cli login --token ${{ secrets.HF_TOKEN }}
+        
     - name: Configure Weights & Biases
       env:
         WANDB_API_KEY: ${{ secrets.WANDB_API_KEY }}
