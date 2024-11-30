@@ -27,6 +27,11 @@ jobs:
       run: |
         pip install jupyter nbconvert
 
+    - name: Install and Setup Kernel
+      run: |
+        pip install ipykernel
+        python -m ipykernel install --user --name=trash_class
+
     - name: Run Notebook
       run: |
         jupyter nbconvert --to notebook --execute --inplace notebooks/Trash_Type_Classifications.ipynb
